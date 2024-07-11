@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     clickedButton.disabled = false;
                     submitButton.textContent = 'Submitted'; // Change button text to "Submitted"
                     // Clear the input field after form is successfully submitted
+                    nameInput.placeholder = inputValue;
                     nameInput.value = '';
             
                 }, 2000);
