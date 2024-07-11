@@ -17,19 +17,19 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('typing');
         }
     });
-
+  
     buttons.forEach(button => {
         button.addEventListener('mouseenter', function() {
             if (!this.classList.contains('loading')) {
                 this.classList.remove('Default', 'focused', 'pressed', 'disabled');
-                this.classList.add('hover');
+                this.classList.add('hovered');
             }
         });
 
-        button.addEventListener('mouseleave', function() {
-            this.classList.remove('hover');
-            this.classList.add('Default');
-        });
+        // button.addEventListener('mouseleave', function() {
+        //     this.classList.remove('hover');
+        //     this.classList.add('Default');
+        // });
 
         button.addEventListener('focus', function() {
             if (!this.classList.contains('loading')) {
@@ -70,8 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     clickedButton.classList.remove('Default');
                     clickedButton.classList.remove('icon', 'loading');
                     clickedButton.classList.add('disabled');
+                    clickedButton.classList.remove('Default');
                     // clickedButton.disabled = false;
                     submitButton.textContent = 'Submitted'; // Change button text to "Submitted"
+                     
                     // Clear the input field after form is successfully submitted
                     nameInput.placeholder = inputValue;
                     nameInput.value = '';

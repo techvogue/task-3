@@ -116,9 +116,7 @@ button.small {
     background-color: var(--gray-1);
 }
 
-.hover {
-    color: var(--blue-5);
-}
+
 
 .focused {
     color: var(--blue-5);
@@ -150,7 +148,7 @@ button.small {
 
 .primary {
     color: var(--gray-1);
-    background-color: var(--blue-5);
+    background-color: var(--blue-6);
     border: none;
 }
 
@@ -251,7 +249,7 @@ button.small {
     background: none;
 }
 
-.text.hover,
+
 .text.focused {
     background-color: var(--gray-2);
 }
@@ -282,8 +280,13 @@ button.small {
 }
 
 
-
-
+button.hovered:hover {
+    color: var(--gray-3);
+    background-color: var(--blue-5);
+}
+.text.hover:hover{
+    background-color: var(--gray-2);
+}
 
 /* input */
 input
