@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     clickedButton.classList.remove('Default');
                     clickedButton.classList.remove('icon', 'loading');
                     clickedButton.classList.add('disabled');
-                    clickedButton.disabled = false;
+                    // clickedButton.disabled = false;
                     submitButton.textContent = 'Submitted'; // Change button text to "Submitted"
                     // Clear the input field after form is successfully submitted
                     nameInput.placeholder = inputValue;
